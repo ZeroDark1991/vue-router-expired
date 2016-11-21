@@ -22,6 +22,7 @@ describe('Pipeline', function () {
   require('./pipeline/can-deactivate')
   require('./pipeline/can-reuse')
   require('./pipeline/data')
+  require('./pipeline/expired-routes')
 })
 
 describe('History', function () {

@@ -45,6 +45,8 @@ class Router {
       )
     }
 
+    this.expiredRoutes = []
+
     // Vue instances
     this.app = null
     this._children = []
@@ -105,6 +107,10 @@ class Router {
   }
 
   // API ===================================================
+
+  pushExpired (path) {
+    this.expiredRoutes.push(path)
+  }
 
     /**
    * Register a map of top-level paths.
